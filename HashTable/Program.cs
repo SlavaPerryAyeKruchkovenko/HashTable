@@ -5,12 +5,11 @@ namespace HashTable
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
-			var table = new HashTable<int,int>(2);
-			table.Add(1, 1);
-			table.Add(2, 2);
-			table.Remove(2);
-			Console.WriteLine(table.Containes(1));
+			var table = new HashTable<int,string>(10000).RandomTable();
+			Console.WriteLine($"Процент заполнения таблицы {table.PercentageOfFilling()}");
+			Console.WriteLine($"Максимальный размер свзяного списка {table.CountOfLongestList()}");
+			Console.WriteLine($"минимальный размер свзяного списка {table.CountOfFewerList()}");
 		}
+
 	}
 }
