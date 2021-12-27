@@ -8,7 +8,7 @@ namespace HashTable
 	{
 		public static HashTable<int,string> RandomTable(this HashTable<int, string> table)
 		{
-			for (int i = 0; i < table.Size; i++)
+			for (int i = 0; i < table.Size*100; i++)
 			{
 				table.Add(i, RandomString(2, 8));
 			}

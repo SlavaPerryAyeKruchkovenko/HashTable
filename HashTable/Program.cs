@@ -5,7 +5,7 @@ namespace HashTable
 	{
 		static void Main(string[] args)
 		{
-			var table = new HashTable<int,string>(10000).RandomTable();
+			var table = new HashTable<int,string>(1000).RandomTable();
 			Console.WriteLine($"Процент заполнения таблицы {table.PercentageOfFilling()}");
 			Console.WriteLine($"Максимальный размер свзяного списка {table.CountOfLongestList()}");
 			Console.WriteLine($"минимальный размер свзяного списка {table.CountOfFewerList()}");
